@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    id("io.gitlab.arturbosch.detekt") version("1.23.1")
 }
 
 android {
@@ -55,4 +56,5 @@ dependencies {
     coreLibraryDesugaring(libs.android.desugaring)
     implementation(libs.koin.android)
     testImplementation(libs.junit)
+    testImplementation(libs.konsist)
 }
